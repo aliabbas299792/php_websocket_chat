@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="imageUpload" action="uploadImage.php" method="post" enctype="multipart/form-data" onsubmit="return false">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+	<br>
+    <input id="submit" type="submit" value="Submit" name="submit">
+</form>
+<img id="response">
+<script>
+document.getElementById("submit").onclick = function(){
+	var form = document.getElementById('imageUpload');
+	var formData = new FormData(form);
+
+	var xhr = new XMLHttpRequest();
+
+	xhr.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status == 200){
+			document.getElementById("response").src=this.response;
+		}
+	}
+
+	xhr.open('POST', 'uploadImage.php', true);
+	xhr.send(formData);
+}
+</script>
+</body>
+</html>

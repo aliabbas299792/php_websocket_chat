@@ -1,0 +1,14 @@
+Congratulations! the server is now running
+PHP Fatal error:  Uncaught React\Socket\ConnectionException: Could not bind to tcp://0.0.0.0:999: Address already in use in /var/www/erewhon.xyz/public_html/chat-server/vendor/react/socket/src/Server.php:29
+Stack trace:
+#0 /var/www/erewhon.xyz/public_html/chat-server/vendor/cboden/ratchet/src/Ratchet/Server/IoServer.php(70): React\Socket\Server->listen(999, '0.0.0.0')
+#1 /var/www/erewhon.xyz/public_html/chat-server/bin/chat-server.php(15): Ratchet\Server\IoServer::factory(Object(Ratchet\Http\HttpServer), 999)
+#2 {main}
+  thrown in /var/www/erewhon.xyz/public_html/chat-server/vendor/react/socket/src/Server.php on line 29
+Congratulations! the server is now running
+PHP Fatal error:  Uncaught React\Socket\ConnectionException: Could not bind to tcp://0.0.0.0:999: Address already in use in /var/www/erewhon.xyz/public_html/chat-server/vendor/react/socket/src/Server.php:29
+Stack trace:
+#0 /var/www/erewhon.xyz/public_html/chat-server/vendor/cboden/ratchet/src/Ratchet/Server/IoServer.php(70): React\Socket\Server->listen(999, '0.0.0.0')
+#1 /var/www/erewhon.xyz/public_html/chat-server/bin/chat-server.php(15): Ratchet\Server\IoServer::factory(Object(Ratchet\Http\HttpServer), 999)
+#2 {main}
+  thrown in /var/www/erewhon.xyz/public_html/chat-server/vendor/react/socket/src/Server.php on line 29
